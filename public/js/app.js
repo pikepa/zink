@@ -1953,12 +1953,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['fname', 'lname']
+  props: ['fname', 'appl']
 });
 
 /***/ }),
@@ -20859,10 +20861,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("layout", { attrs: { title: "Welcome" } }, [
-    _c("p", [
-      _vm._v(
-        "This is Dashboard, " + _vm._s(_vm.fname) + ", " + _vm._s(_vm.lname)
-      )
+    _c("div", { staticClass: "container mx-auto px-6 md:px-0" }, [
+      _c("p", [
+        _vm._v(
+          "This is Dashboard, " + _vm._s(_vm.fname) + ", " + _vm._s(_vm.appl)
+        )
+      ])
     ])
   ])
 }
@@ -20903,7 +20907,7 @@ var render = function() {
                     "text-lg font-semibold text-gray-100 no-underline",
                   attrs: { href: "#" }
                 },
-                [_vm._v("Zink")]
+                [_vm._v(_vm._s(_vm.$page.app.name))]
               )
             ],
             1
@@ -20911,7 +20915,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "flex-1 text-right" }, [
             _c("span", { staticClass: "text-gray-300 text-sm pr-4" }, [
-              _vm._v("Peter Pike")
+              _vm._v(_vm._s(_vm.$page.auth.user.name))
             ]),
             _vm._v(" "),
             _c(

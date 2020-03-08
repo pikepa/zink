@@ -4,10 +4,10 @@
                 <div class="container mx-auto px-6 md:px-0">
                     <div class="flex items-center justify-center">
                         <div class="mr-6">
-                            <inertia-link class="text-lg font-semibold text-gray-100 no-underline" href="#">Zink</inertia-link> 
+                            <inertia-link class="text-lg font-semibold text-gray-100 no-underline" href="#">{{$page.app.name}}</inertia-link> 
                         </div>
                         <div class="flex-1 text-right">
-                                <span class="text-gray-300 text-sm pr-4">Peter Pike</span>
+                                <span class="text-gray-300 text-sm pr-4">{{$page.auth.user.name}}</span>
                                 <a class="text-gray-300 text-sm pr-4" href="#" @click='handleLogout'>Logout</a>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 <template>
   <layout title="Welcome">
-        <p>This is Dashboard, {{fname}}, {{lname}}</p>
+      <div class="container mx-auto px-6 md:px-0">
+        <p>This is Dashboard, {{fname}}, {{appl}}</p>
+      </div>
   </layout>
 </template>
 
@@ -11,6 +13,6 @@
     components: {
       Layout,
     },
-    props:['fname','lname']
+    props:['fname','appl']
   }
 </script>
