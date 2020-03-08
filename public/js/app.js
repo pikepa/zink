@@ -20904,7 +20904,7 @@ var render = function() {
                 "inertia-link",
                 {
                   staticClass:
-                    "text-lg font-semibold text-gray-100 no-underline",
+                    "text-2xl font-semibold text-gray-100 no-underline",
                   attrs: { href: "#" }
                 },
                 [_vm._v(_vm._s(_vm.$page.app.name))]
