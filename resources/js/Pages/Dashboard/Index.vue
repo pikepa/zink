@@ -1,12 +1,16 @@
 <template>
-    <div class="text-red-600">
+  <layout title="Welcome">
         <p>This is Dashboard, {{fname}}, {{lname}}</p>
-    </div>
-
+  </layout>
 </template>
 
 <script>
-export default {
+  import Layout from './../../Shared/Layout'
+
+  export default {
+    components: {
+      Layout,
+    },
     props:['fname','lname']
-}
+  }
 </script>
